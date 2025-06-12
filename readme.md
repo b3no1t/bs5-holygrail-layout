@@ -1,6 +1,6 @@
 # BS5 Holy Grail Layout
 
-´´´bash
+``bash
 npm install
 npm run dev
-´´´
+``
