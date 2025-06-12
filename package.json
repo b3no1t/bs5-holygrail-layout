@@ -1,0 +1,26 @@
+{
+  "name": "parcel",
+  "description": "Include Bootstrap's source Sass and individual JavaScript plugins with Parcel.",
+  "version": "1.0.1",
+  "repository": "twbs/examples",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel serve src/*.html --public-url / --dist-dir prod",
+    "build": "parcel build src/*.html --public-url / --dist-dir prod",
+    "test": "npm run build"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.6",
+    "sass": "^1.89.2"
+  },
+  "devDependencies": {
+    "@parcel/compressor-brotli": "^2.15.2",
+    "@parcel/compressor-gzip": "^2.15.2",
+    "@parcel/packager-raw-url": "^2.15.2",
+    "@parcel/transformer-sass": "^2.15.2",
+    "@parcel/transformer-webmanifest": "^2.15.2",
+    "parcel": "latest",
+    "svgo": "^3.3.2"
+  }
+}

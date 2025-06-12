@@ -1,0 +1,50 @@
+// Styles minimum nécessaires qui ne peuvent pas être remplacés par des classes Bootstrap
+
+// Active state personnalisé
+
+.nav-link.active {
+  color: var(--bs-white);
+  background-color: var(--bs-primary);
+  border-radius: var(--bs-border-radius);
+}
+.bi {
+ padding-right:.5rem;
+}
+// Style de base des barres latérales
+.sidebar {
+  @include media-breakpoint-down(md) {
+    border-top: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
+    border-bottom: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
+  }
+
+  @include media-breakpoint-up(md) {
+    border-right: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color);
+    &.right {
+      border-right: none;
+      border-left: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color);
+    }
+  }
+}
+
+#theme-toggle {
+ .bi {
+  display: none;
+  font-size: 1.25rem;
+ }
+
+ .theme-icon-active {
+  display: inline-block;
+ }
+}
+
+[data-bs-theme="dark"] {
+ #theme-toggle {
+  .bi-moon-fill {
+   display: inline-block;
+  }
+
+  .bi-sun-fill {
+   display: none;
+  }
+ }
+}
