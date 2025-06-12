@@ -5,8 +5,8 @@
   "repository": "twbs/examples",
   "license": "MIT",
   "scripts": {
-    "start": "parcel serve src/*.html --public-url / --dist-dir prod",
-    "build": "parcel build src/*.html --public-url / --dist-dir prod",
+    "dev": "parcel  src/*.html --public-url / --dist-dir production --open",
+    "build": "parcel build src/*.html --public-url / --dist-dir production",
     "test": "npm run build"
   },
   "dependencies": {
