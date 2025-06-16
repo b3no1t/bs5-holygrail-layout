@@ -1,11 +1,12 @@
 {
-  "name": "parcel",
+  "name": "BS5 - parcel",
   "description": "Include Bootstrap's source Sass and individual JavaScript plugins with Parcel.",
   "version": "1.0.1",
   "repository": "twbs/examples",
   "license": "MIT",
+  "source": "index.html",
   "scripts": {
-    "dev": "parcel  src/*.html  --public-url / --dist-dir production --open",
+    "dev": "parcel  src/magazine-layout.html --open",
     "build": "parcel build src/*.html --public-url / --dist-dir production",
     "test": "npm run build"
   },
@@ -21,6 +22,7 @@
     "@parcel/transformer-sass": "^2.15.2",
     "@parcel/transformer-webmanifest": "^2.15.2",
     "parcel": "latest",
+    "sharp": "^0.33.5",
     "svgo": "^3.3.2"
   }
 }
